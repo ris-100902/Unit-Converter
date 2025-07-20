@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" target="_self">
+        <div id="title">
+            <h1>Unit Converter</h1>
+        </div>
+        <div id="navbar">
+            <nav>
+                <a href="http://localhost:8080/length.html" style="text-decoration: underline; color: blue;">Length</a>
+                <a href="http://localhost:8080/weight.html">Weight</a>
+                <a href="http://localhost:8080/temp.html">Temperature</a>
+            </nav>
+        </div>
+        <div class="fields">
+            <div class="inputDiv">
+                <label for="length">Enter the length to convert</label> </br>
+                <input name="length" type="number" step="0.01" required>
+            </div>
+            <div class="inputDiv">
+                <label for="unitFrom">Unit to convert from</label> </br>
+                <select name="unitFrom" id="lengthFrom">
+                    <option value="mm">Mm</option>
+                    <option value="cm">Cm</option>
+                    <option value="m">M</option>
+                    <option value="km">Km</option>
+                </select>
+            </div>
+            <div class="inputDiv">
+                <label for="unitTo">Unit to convert to</label> </br>
+                <select name="unitTo" id="lengthTo">
+                    <option value="mm">Mm</option>
+                    <option value="cm">Cm</option>
+                    <option value="m">M</option>
+                    <option value="km">Km</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Convert</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

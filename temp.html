@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form target="_self" method="get">
+        <div id="title">
+            <h1>Unit Converter</h1>
+        </div>
+        <div id="navbar">
+            <nav>
+                <a href="http://localhost:8080/length.html">Length</a>
+                <a href="http://localhost:8080/weight.html">Weight</a>
+                <a href="http://localhost:8080/temp.html" style="text-decoration: underline; color: blue;">Temperature</a>
+            </nav>
+        </div>
+        <div class="fields">
+            <div class="inputDiv">
+                <label for="temp">Enter the Temperature to convert</label> </br>
+                <input name="temp" type="number" step="0.01" required>
+            </div>
+            <div class="inputDiv">
+                <label for="unitFrom">Unit to convert from</label> </br>
+                <select name="unitFrom" id="tempFrom">
+                    <option value="celsius">Celsius</option>
+                    <option value="farenheit">Farenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div class="inputDiv">
+                <label for="unitTo">Unit to convert to</label> </br>
+                <select name="unitTo" id="tempTo">
+                    <option value="celsius">Celsius</option>
+                    <option value="farenheit">Farenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Convert</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
